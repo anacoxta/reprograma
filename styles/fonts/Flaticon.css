@@ -1,0 +1,11 @@
+/* Webfont: Flaticon */@font-face {
+    font-family: 'Flaticon';
+    src: url('Flaticon.eot'); /* IE9 Compat Modes */
+    src: url('Flaticon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Flaticon.woff') format('woff'), /* Modern Browsers */
+         url('Flaticon.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

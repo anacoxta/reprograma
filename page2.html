@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loja Monstra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/fonts/afinada/OZZOMBIE RELOADED - simplificado no illustrator.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/fonts/FILLEDPARCIAL/OZZOMBIE FILLED - simplificado no illustrator.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/flaticon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide tipoA">Slide 1</div>
+            <div class="swiper-slide tipoB">Slide 2</div>
+            <div class="swiper-slide tipoC">Slide 3</div>
+            <div class="swiper-slide tipoD">Slide 4</div>
+            <div class="swiper-slide tipoE">Slide 5</div>
+            <div class="swiper-slide tipoF">Slide 6</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- INCIALIZA SWIPER -->
+    <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
+
+    <!-- CONFIGURAÇÃO SWIPER -->
+    <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'vertical',
+                slidesPerView: 1,
+                spaceBetween: 0,
+                keyboard: {enabled: true},
+                pagination: {el: '.swiper-pagination', type: 'bullets', bulletElement: 'span',  clickable: true},
+                mousewheel: true
+            })
+        </script>
+
+    <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>

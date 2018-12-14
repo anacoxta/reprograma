@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loja Monstra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/fonts/ozzombiefilled/OZZOMBIEFILLED.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/fonts/ozzombiereloaded/OZZOMBIERELOADED.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/flaticon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
+</head>
+
+<body>
+
+    <div class="icon-container">
+    </div>
+    <div class="icon" id="icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+
+    <div class="nav-container">
+        <!-- <div class="overlay" id="overlay"> -->
+        <nav class="navegacao">
+            <!-- <nav class="overlay-menu"> -->
+            <ul>
+                <li><a href="https://www.lojamonstra.com.br/slides/home"><h1>Home</h1></a></li>
+                <li><a href="https://www.lojamonstra.com.br/slides/info"><h1>Info</h1></a></li>
+                <li><a href="https://www.lojamonstra.com.br/slides/fotos"><h1>Fotos</h1></a></li>
+                <li><a href="https://www.lojamonstra.com.br/slides/eventos"><h1>Eventos</h1></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+            <!--- SLIDE 1 ------------------------------------------------->
+
+            <div class="swiper-slide home" data-history="home">
+
+                <div class="menu-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <div id="animacaoMonstra"></div>
+
+
+
+                <div class="skyline"><img src="./images/skyline03.svg" id="skyline03" /></div>
+                <div class="skyline"><img src="./images/skyline02.svg" id="skyline02" /></div>
+                <div class="skyline"><img src="./images/skyline01.svg" id="skyline01" /></div>
+
+
+            </div>
+
+            <!--- SLIDE 2 ------------------------------------------------->
+
+            <div class="swiper-slide monstra" data-history="info">
+
+                <div class="monstra-main">
+
+                    <img class="kikobanner" src="./images/Kiko_banner.svg" alt="Ilustração de Kiko Garcia representando os produtos vendidos pela loja: camisetas, quadrinhos, arte e doideras">
+                    <h1>A loja de quadrinhos mais monstruosa de São Paulo!</h1>
+
+                </div>
+
+
+                <div class="footer">
+                    <div class="texto-footer">
+                        <h3>Pça. Benedito Calixto, 158, 1º andar<br>
+                            Pinheiros &bull; São Paulo, SP</h3>
+                        <h4><a href="mailto:sample@email.com" data-rel="external">cuidadocom@lojamonstra.com.br</a><br>
+                            <a href="tel:011-3167-4838">(11) 3167-4838</a></h4>
+                    </div>
+                    <ul class="redes-sociais">
+                        <li><a href="https://facebook.com/lojamonstrahq" target="_blank">
+                                <span class="social-icon flaticon-013-facebook" alt="Ícone - link para o Facebook"></span></a></li>
+                        <li><a href="https://instagram.com/lojamonstra" target="_blank">
+                                <span class="social-icon flaticon-014-instagram" alt="Ícone - link para o Instagram"></span></a></li>
+                        <li><a href="https://twitter.com/lojamonstra" target="_blank">
+                                <span class="social-icon flaticon-004-twitter" alt="Ícone - link para o Twitter"></span></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC50KbG09izHOwnKr0OzxwjQ/" target="_blank">
+                                <span class="social-icon flaticon-018-youtube" alt="Ícone - link para o Youtube"></span></a></li>
+                        <li>
+                            <img class="social-barra" src="./images/social_separador.svg" /></li>
+                        <li><a href="mailto:cuidadocom@lojamonstra.com" target="_blank">
+                                <span class="social-icon flaticon-043-email" alt="Ícone - link para enviar e-mail"></span></a></li>
+                        <li><a href="https://goo.gl/maps/qfF5b1v78QR2" target="_blank">
+                                <span class="social-icon flaticon-006-pin" alt="Ícone - link para o Google Maps"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--- SLIDE 3 ------------------------------------------------->
+
+            <div class="swiper-slide fotos" data-history="fotos">
+                    <h1>Fotos</h1>
+                    <ul class="insta-container" id="photofeed"></ul>
+
+            </div>
+
+            <!--- SLIDE 4 ------------------------------------------------->
+
+            <div class="swiper-slide eventos" data-history="eventos">
+
+                <div class="h2group">
+                    <h2>A Monstra recebe eventos de sessão de autógrafos, lançamentos, bate-papos e mais!</h2>
+                    <h2>Confira o calendário no facebook:</h2>
+                    <a href="https://www.facebook.com/pg/lojamonstrahq/events/" target="_blank">
+                        <!--ícone facebook -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path class="a" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm3,8H13.7c-.6,0-.7.2-.7.8V10h2l-.2,2H13v7H10V12H8V10h2V7.7c0-1.8.9-2.7,3-2.7h2Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <img class="tentaculos" src="./images/tentaculos-evento.svg" />
+
+            </div>
+
+                
+
+        </div> <!-- fecha a div 'swiper-wrapper' -->
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- swiper -->
+    <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
+    <!-- lottie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie_light.min.js"></script>
+    <!-- scroll magic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <!-- instagram -->
+    <script src="./scripts/instagram.js"></script>
+    <!-- index.js -->
+    <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: orange;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+}
+
+/* FUNDO ROXO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.icon-container {
+  z-index: 100;
+  width: 66px;
+  height: 66px;
+  padding: 0;
+  margin: 0;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: purple;
+  color: #1efb00;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-container.fullscreen {
+  border-radius: 0;
+  padding: 0 !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* BURGER ICON %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.icon {
+  z-index: 102;
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon .line {
+  width: 30px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #1efb00;
+  display: block;
+  margin: 6px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  -webkit-filter: hue-rotate(-50deg);
+  filter: hue-rotate(-50deg);
+}
+
+.icon.is-x {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.icon.is-x .line {
+  width: 35px;
+}
+
+.icon.is-x .line:nth-child(2) {
+  opacity: 0;
+}
+
+.icon.is-x .line:nth-child(1) {
+  -webkit-transform: translateY(17px);
+  -ms-transform: translateY(17px);
+  -o-transform: translateY(17px);
+  transform: translateY(12px);
+}
+
+.icon.is-x .line:nth-child(3) {
+  -webkit-transform: translateY(-17px) rotate(90deg);
+  -ms-transform: translateY(-17px) rotate(90deg);
+  -o-transform: translateY(-17px) rotate(90deg);
+  transform: translateY(-12px) rotate(90deg);
+}
+
+.icon.is-x:hover {
+  cursor: pointer;
+  transform: rotate(-45deg) scale(1.2);
+  -webkit-filter: hue-rotate(-50deg);
+  filter: hue-rotate(-50deg);
+}
+
+
+/* LISTA NAVEGAÇÃO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.nav-container.aberto {
+  z-index: 101;
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-container.aberto ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container.aberto li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* TIPOGRAFIA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.nav-container.aberto li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  opacity: 0.8;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+
+/* =================== TELAS MAIORES  ====================*/
+
+@media only screen and (min-width: 768px) {
+
+  .icon-container {
+    width: 118px;
+    height: 118px;
+    padding: 30px 0px;
+    margin: 0;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .icon {
+    top: 43px;
+    right: 50px;
+  }  
+
+  .icon .line {
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 7px auto;
+  }
+
+  .icon.is-x .line {
+    width: 50px;
+  }
+
+  .icon.is-x {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  .icon.is-x .line:nth-child(1) {
+    -webkit-transform: translateY(17px);
+    -ms-transform: translateY(17px);
+    -o-transform: translateY(17px);
+    transform: translateY(17px);
+  }
+  
+  .icon.is-x .line:nth-child(3) {
+    -webkit-transform: translateY(-17px) rotate(90deg);
+    -ms-transform: translateY(-17px) rotate(90deg);
+    -o-transform: translateY(-17px) rotate(90deg);
+    transform: translateY(-17px) rotate(90deg);
+  }
+  
+}

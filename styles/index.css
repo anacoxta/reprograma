@@ -1,0 +1,469 @@
+/* ÍCONES DE REDES SOCIAIS*/
+@font-face {
+    font-family: "Flaticon";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/Flaticon.woff") format("woff"),
+        url("./fonts/Flaticon.ttf") format("truetype");
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* --- SELETORES GERAIS --- */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #000;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1,
+h1:before {
+    font-size: 2.3rem;
+    font-weight: normal;
+    line-height: 2.3rem;
+    max-width: 90vw;
+    moz-osx-font-smoothing: grayscale;
+    text-transform: uppercase;
+    webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    color: rgb(0, 255, 0);
+    font-family: 'OZZOMBIEFILLED';
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+h1:before {
+    color: rgb(24, 158, 30);
+    content: attr(content);
+    font-family: 'OZZOMBIERELOADED';
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* --- SWIPER --- */
+
+.swiper-container {
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+}
+
+.swiper-pagination {
+    position: fixed !important;
+}
+
+.swiper-slide {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    height: 100vh !important;
+    justify-content: center;
+    ms-flex-align: center;
+    ms-flex-pack: center;
+    overflow: hidden;
+    text-align: center;
+    webkit-align-items: center;
+    webkit-box-align: center;
+    webkit-box-pack: center;
+    webkit-justify-content: center;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* --- SESSÃO 1: HOME --- */
+
+.home {
+    background-image: url("../images/placeholder-animacao.png");
+}
+
+#animacaoMonstra {
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.skyline {
+    bottom: -10px;
+    height: auto;
+    position: absolute;
+    width: 200vw;
+}
+
+#skyline01 {
+    z-index: 3;
+}
+
+#skyline02 {
+    z-index: 2;
+}
+
+#skyline03 {
+    z-index: 1;
+}
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* --- SESSÃO 2: CARD --- */
+
+.footer {
+    background-color: #ff9400;
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 0;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.kikobanner {
+    margin: 0;
+    width: 90vw;
+    padding-bottom: 1.5rem;
+}
+
+.monstra {
+    background-color: #53217d;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.monstra-main {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 4;
+    justify-content: center;
+}
+
+.redes-sociais {
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 5px;
+    width: auto;
+}
+
+.redes-sociais li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-barra {
+    height: 2.2rem;
+    padding: 0 0.2em;
+}
+
+.social-icon {
+    font-family: Flaticon;
+    font-size: 2.5rem;
+}
+
+.texto-footer {
+    font-weight: 700;
+    overflow-wrap: break-word;
+}
+
+.texto-footer a,
+.texto-footer a:link,
+.texto-footer a:visited,
+.redes-sociais a,
+.redes-sociais a:link,
+.redes-sociais a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.texto-footer a:active,
+.redes-sociais a:active {
+    color: #7a38c6;
+}
+
+.texto-footer a:hover,
+.redes-sociais a:hover {
+    color: #53217d;
+}
+
+.texto-footer h3 {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    margin: 0.5em;
+}
+
+.texto-footer h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin: 0.5em;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* --- SESSÃO 3: FOTOS --- */
+
+.fotos {
+    flex-direction: column;
+    background-image: url('../images/backbrain.jpg');
+    background-repeat: repeat;
+}
+
+#photofeed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #photofeed li{
+    /* width:200px;
+    height:200px; */
+    width: 100px;
+    height: 100px;
+    position: relative;
+    list-style: none;
+
+  }
+  #photofeed li img{
+      border: 6px #ff9400 solid;
+    /* max-width:100%;
+    max-height:100%; */
+    display: block;
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* --- SESSÃO 4: EVENTOS --- */
+
+.eventos {
+    background-color: #53217d;
+    transition: all 0.5s ease-in-out;
+}
+
+.eventos .h2group {
+    position: absolute;
+    top: 3.5rem;
+    max-width: 90vw;
+    z-index: 15;
+}
+
+.eventos .h2group h2 {
+    font-family: 'Roboto Slab', serif;
+    color: orangered;
+    opacity: 1;
+    font-weight: 700;
+    font-size: 1.7rem;
+    display: block;
+    z-index: 15;
+    margin: 0 0 2rem;
+}
+
+.h2group svg {
+width:5rem;
+height:5rem;
+z-index: 11;
+transition: all 0.2s ease-in;
+z-index: 15;
+opacity: 1;
+}
+
+.h2group svg:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.h2group svg .a {
+    fill: orangered;
+    /* fill: #00ff24; */
+}
+
+
+
+.tentaculos {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 200%;
+    z-index: 10;
+    overflow: hidden;
+    display: block;
+    
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+
+/* ######################################################################################################### */
+/* ######################################################################################################### */
+/* ############################################# MEDIA QUERIES ############################################# */
+/* ######################################################################################################### */
+/* ######################################################################################################### */
+
+
+/* ============================================= INTERMEDIÁRIO ============================================= */
+
+@media only screen and (min-width: 500px) {
+
+
+    /* ------- SELETORES GERAIS ------- */
+
+    h1,
+    h1:before {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    /* ------- SESSÃO 1: HOME ------- */
+    #animacaoMonstra {
+        width: 80vw;
+    }
+    
+    .skyline {
+        width: 150vw;
+    }
+
+    /* ------- SESSÃO 2: CARD ------- */
+    .footer {
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .kikobanner {
+        max-width: 600px;
+    }
+
+    /* ------- SESSÃO 3: FOTOS  ------- */
+
+    #photofeed li{
+        width: 150px;
+        height: 150px;
+    
+      }
+      #photofeed li img{
+        width:150px;
+        height: 150px;
+      }
+
+    /* ------- SESSÃO 4: EVENTOS ------- */
+
+    .eventos .h2group {
+        position: absolute;
+        top: 9rem;}
+    
+
+    .eventos .h2group h2 {
+        font-size: 2.3rem;
+    }
+
+    .h2group svg {
+        width:7rem;
+        height:7rem;
+    }        
+        
+    .tentaculos {
+        left: auto;
+        right: 0;
+        width: 150%;
+    }
+
+
+}
+
+
+/* =============================================== DESKTOP =============================================== */
+
+@media only screen and (min-width: 768px) {
+
+
+
+    /* ------- SELETORES GERAIS ------- */
+    h1,
+    h1:before {
+        font-size: 6rem;
+        line-height: 5.5rem;
+    }
+
+    /* ------- SESSÃO 1: HOME ------- */
+    #animacaoMonstra {
+        max-width: 700px;
+        width: 70vw;
+    }
+
+    .skyline {
+        width: 100vw;
+    }
+
+    /* ------- SESSÃO 2: CARD ------- */
+    .kikobanner {
+        width: 80vw;
+        max-width: 900px;
+    }
+
+    /* ------- SESSÃO 3: FOTOS  ------- */
+
+      #photofeed li{
+        width: 200px;
+        height: 200px;
+    
+      }
+      #photofeed li img{
+        width:200px;
+        height: 200px;
+      }
+    
+
+    /* ------- SESSÃO 4: EVENTOS ------- */
+
+    .eventos .h2group h2 {
+        font-size: 3rem;
+        max-width: 60vw;;
+    }
+    
+
+    .tentaculos {
+        left: 0;
+        width: 100%;
+    }
+
+    /* ------- SESSÃO 5: VISITE ------- */
+
+
+
+}
+

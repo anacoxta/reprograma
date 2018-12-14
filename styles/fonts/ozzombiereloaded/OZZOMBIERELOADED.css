@@ -1,0 +1,11 @@
+/* Webfont: OZZOMBIE RELOADED */@font-face {
+    font-family: 'OZZOMBIERELOADED';
+    src: url('OZZOMBIERELOADED.eot'); /* IE9 Compat Modes */
+    src: url('OZZOMBIERELOADED.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('OZZOMBIERELOADED.woff') format('woff'), /* Modern Browsers */
+         url('OZZOMBIERELOADED.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
